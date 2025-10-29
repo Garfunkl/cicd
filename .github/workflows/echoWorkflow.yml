@@ -10,6 +10,8 @@ on:
 jobs:
   echo-date:
     runs-on: self-hosted  # This tells GitHub to use your self-hosted runner
+    container:
+      image: "ubuntu:latest"
 
     steps:
       - name: Checkout repository
