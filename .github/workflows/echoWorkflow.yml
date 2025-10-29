@@ -1,0 +1,21 @@
+name: Date Check
+
+on:
+  workflow_dispatch:  # Allow manual trigger
+  push:
+    branches: 
+      - '**'
+
+
+jobs:
+  echo-date:
+    runs-on: self-hosted  # This tells GitHub to use your self-hosted runner
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Print current date
+        run: |
+          echo "Current date and time:"
+          date
