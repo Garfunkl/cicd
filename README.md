@@ -1,2 +1,2 @@
-### hello in CICD
+### hello in CI/CD
 no worries!
